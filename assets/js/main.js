@@ -8,13 +8,9 @@ let secOut = document.querySelector('#secOut');
 
 
 const knoedelCount = () => {
-    console.log(inputDate.value);
     let knoedelFest = new Date(inputDate.value);
-    console.log(knoedelFest);
-    let today = new Date()
-    console.log(today);
+    let today = new Date();
     let todayMs = knoedelFest.getTime() - today.getTime();
-    console.log(todayMs);
     let knoedelDays = todayMs / 1000 / 60 / 60 / 24;
     let daysAusgabe = Math.floor(knoedelDays);
     let knoedelHours = (knoedelDays - daysAusgabe) * 24;
@@ -27,8 +23,6 @@ const knoedelCount = () => {
     hourOut.innerHTML = hoursAusgabe;
     minOut.innerHTML = minutesAusgabe;
     secOut.innerHTML = secondsAusgabe;
-
-    console.log(secondsAusgabe);
     setInterval(knoedelCount, 1000);
 }
 
