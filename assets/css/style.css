@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20vh auto;
+}
+
+h2,
+h3 {
+    font-size: 4rem;
+    padding: 2.5vh auto;
+}
